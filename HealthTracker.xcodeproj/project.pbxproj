@@ -1,0 +1,828 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A28AF0DC20153CB800E2370E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28AF0DB20153CB800E2370E /* AppDelegate.swift */; };
+		A28AF0DE20153CB800E2370E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28AF0DD20153CB800E2370E /* ViewController.swift */; };
+		A28AF0E120153CB800E2370E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A28AF0DF20153CB800E2370E /* Main.storyboard */; };
+		A28AF0E320153CB800E2370E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A28AF0E220153CB800E2370E /* Assets.xcassets */; };
+		A28AF0E620153CB900E2370E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A28AF0E420153CB900E2370E /* LaunchScreen.storyboard */; };
+		A28AF0F120153CB900E2370E /* HealthTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28AF0F020153CB900E2370E /* HealthTrackerTests.swift */; };
+		A28AF0FC20153CB900E2370E /* HealthTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28AF0FB20153CB900E2370E /* HealthTrackerUITests.swift */; };
+		A28AF10120153CB900E2370E /* HealthTracker WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A28AF10020153CB900E2370E /* HealthTracker WatchKit App.app */; };
+		A28AF10720153CB900E2370E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A28AF10520153CB900E2370E /* Interface.storyboard */; };
+		A28AF10920153CB900E2370E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A28AF10820153CB900E2370E /* Assets.xcassets */; };
+		A28AF11020153CB900E2370E /* HealthTracker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A28AF10F20153CB900E2370E /* HealthTracker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A28AF11520153CB900E2370E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28AF11420153CB900E2370E /* InterfaceController.swift */; };
+		A28AF11720153CB900E2370E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28AF11620153CB900E2370E /* ExtensionDelegate.swift */; };
+		A28AF11920153CB900E2370E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28AF11820153CB900E2370E /* NotificationController.swift */; };
+		A28AF11B20153CB900E2370E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A28AF11A20153CB900E2370E /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A28AF0ED20153CB900E2370E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A28AF0D020153CB800E2370E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A28AF0D720153CB800E2370E;
+			remoteInfo = HealthTracker;
+		};
+		A28AF0F820153CB900E2370E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A28AF0D020153CB800E2370E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A28AF0D720153CB800E2370E;
+			remoteInfo = HealthTracker;
+		};
+		A28AF10220153CB900E2370E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A28AF0D020153CB800E2370E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A28AF0FF20153CB900E2370E;
+			remoteInfo = "HealthTracker WatchKit App";
+		};
+		A28AF11120153CB900E2370E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A28AF0D020153CB800E2370E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A28AF10E20153CB900E2370E;
+			remoteInfo = "HealthTracker WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A28AF12320153CB900E2370E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A28AF11020153CB900E2370E /* HealthTracker WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28AF12720153CB900E2370E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A28AF10120153CB900E2370E /* HealthTracker WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A28AF0D820153CB800E2370E /* HealthTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28AF0DB20153CB800E2370E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A28AF0DD20153CB800E2370E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A28AF0E020153CB800E2370E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A28AF0E220153CB800E2370E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A28AF0E520153CB900E2370E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A28AF0E720153CB900E2370E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A28AF0EC20153CB900E2370E /* HealthTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28AF0F020153CB900E2370E /* HealthTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTrackerTests.swift; sourceTree = "<group>"; };
+		A28AF0F220153CB900E2370E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A28AF0F720153CB900E2370E /* HealthTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28AF0FB20153CB900E2370E /* HealthTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTrackerUITests.swift; sourceTree = "<group>"; };
+		A28AF0FD20153CB900E2370E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A28AF10020153CB900E2370E /* HealthTracker WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HealthTracker WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28AF10620153CB900E2370E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A28AF10820153CB900E2370E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A28AF10A20153CB900E2370E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A28AF10F20153CB900E2370E /* HealthTracker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HealthTracker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28AF11420153CB900E2370E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A28AF11620153CB900E2370E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A28AF11820153CB900E2370E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A28AF11A20153CB900E2370E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A28AF11C20153CB900E2370E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A28AF11D20153CB900E2370E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A28AF0D520153CB800E2370E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28AF0E920153CB900E2370E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28AF0F420153CB900E2370E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28AF10C20153CB900E2370E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A28AF0CF20153CB800E2370E = {
+			isa = PBXGroup;
+			children = (
+				A28AF0DA20153CB800E2370E /* HealthTracker */,
+				A28AF0EF20153CB900E2370E /* HealthTrackerTests */,
+				A28AF0FA20153CB900E2370E /* HealthTrackerUITests */,
+				A28AF10420153CB900E2370E /* HealthTracker WatchKit App */,
+				A28AF11320153CB900E2370E /* HealthTracker WatchKit Extension */,
+				A28AF0D920153CB800E2370E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A28AF0D920153CB800E2370E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A28AF0D820153CB800E2370E /* HealthTracker.app */,
+				A28AF0EC20153CB900E2370E /* HealthTrackerTests.xctest */,
+				A28AF0F720153CB900E2370E /* HealthTrackerUITests.xctest */,
+				A28AF10020153CB900E2370E /* HealthTracker WatchKit App.app */,
+				A28AF10F20153CB900E2370E /* HealthTracker WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A28AF0DA20153CB800E2370E /* HealthTracker */ = {
+			isa = PBXGroup;
+			children = (
+				A28AF0DB20153CB800E2370E /* AppDelegate.swift */,
+				A28AF0DD20153CB800E2370E /* ViewController.swift */,
+				A28AF0DF20153CB800E2370E /* Main.storyboard */,
+				A28AF0E220153CB800E2370E /* Assets.xcassets */,
+				A28AF0E420153CB900E2370E /* LaunchScreen.storyboard */,
+				A28AF0E720153CB900E2370E /* Info.plist */,
+			);
+			path = HealthTracker;
+			sourceTree = "<group>";
+		};
+		A28AF0EF20153CB900E2370E /* HealthTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A28AF0F020153CB900E2370E /* HealthTrackerTests.swift */,
+				A28AF0F220153CB900E2370E /* Info.plist */,
+			);
+			path = HealthTrackerTests;
+			sourceTree = "<group>";
+		};
+		A28AF0FA20153CB900E2370E /* HealthTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A28AF0FB20153CB900E2370E /* HealthTrackerUITests.swift */,
+				A28AF0FD20153CB900E2370E /* Info.plist */,
+			);
+			path = HealthTrackerUITests;
+			sourceTree = "<group>";
+		};
+		A28AF10420153CB900E2370E /* HealthTracker WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A28AF10520153CB900E2370E /* Interface.storyboard */,
+				A28AF10820153CB900E2370E /* Assets.xcassets */,
+				A28AF10A20153CB900E2370E /* Info.plist */,
+			);
+			path = "HealthTracker WatchKit App";
+			sourceTree = "<group>";
+		};
+		A28AF11320153CB900E2370E /* HealthTracker WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A28AF11420153CB900E2370E /* InterfaceController.swift */,
+				A28AF11620153CB900E2370E /* ExtensionDelegate.swift */,
+				A28AF11820153CB900E2370E /* NotificationController.swift */,
+				A28AF11A20153CB900E2370E /* Assets.xcassets */,
+				A28AF11C20153CB900E2370E /* Info.plist */,
+				A28AF11D20153CB900E2370E /* PushNotificationPayload.apns */,
+			);
+			path = "HealthTracker WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A28AF0D720153CB800E2370E /* HealthTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A28AF12820153CB900E2370E /* Build configuration list for PBXNativeTarget "HealthTracker" */;
+			buildPhases = (
+				A28AF0D420153CB800E2370E /* Sources */,
+				A28AF0D520153CB800E2370E /* Frameworks */,
+				A28AF0D620153CB800E2370E /* Resources */,
+				A28AF12720153CB900E2370E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A28AF10320153CB900E2370E /* PBXTargetDependency */,
+			);
+			name = HealthTracker;
+			productName = HealthTracker;
+			productReference = A28AF0D820153CB800E2370E /* HealthTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A28AF0EB20153CB900E2370E /* HealthTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A28AF12B20153CB900E2370E /* Build configuration list for PBXNativeTarget "HealthTrackerTests" */;
+			buildPhases = (
+				A28AF0E820153CB900E2370E /* Sources */,
+				A28AF0E920153CB900E2370E /* Frameworks */,
+				A28AF0EA20153CB900E2370E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A28AF0EE20153CB900E2370E /* PBXTargetDependency */,
+			);
+			name = HealthTrackerTests;
+			productName = HealthTrackerTests;
+			productReference = A28AF0EC20153CB900E2370E /* HealthTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A28AF0F620153CB900E2370E /* HealthTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A28AF12E20153CB900E2370E /* Build configuration list for PBXNativeTarget "HealthTrackerUITests" */;
+			buildPhases = (
+				A28AF0F320153CB900E2370E /* Sources */,
+				A28AF0F420153CB900E2370E /* Frameworks */,
+				A28AF0F520153CB900E2370E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A28AF0F920153CB900E2370E /* PBXTargetDependency */,
+			);
+			name = HealthTrackerUITests;
+			productName = HealthTrackerUITests;
+			productReference = A28AF0F720153CB900E2370E /* HealthTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A28AF0FF20153CB900E2370E /* HealthTracker WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A28AF12420153CB900E2370E /* Build configuration list for PBXNativeTarget "HealthTracker WatchKit App" */;
+			buildPhases = (
+				A28AF0FE20153CB900E2370E /* Resources */,
+				A28AF12320153CB900E2370E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A28AF11220153CB900E2370E /* PBXTargetDependency */,
+			);
+			name = "HealthTracker WatchKit App";
+			productName = "HealthTracker WatchKit App";
+			productReference = A28AF10020153CB900E2370E /* HealthTracker WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A28AF10E20153CB900E2370E /* HealthTracker WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A28AF12020153CB900E2370E /* Build configuration list for PBXNativeTarget "HealthTracker WatchKit Extension" */;
+			buildPhases = (
+				A28AF10B20153CB900E2370E /* Sources */,
+				A28AF10C20153CB900E2370E /* Frameworks */,
+				A28AF10D20153CB900E2370E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HealthTracker WatchKit Extension";
+			productName = "HealthTracker WatchKit Extension";
+			productReference = A28AF10F20153CB900E2370E /* HealthTracker WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A28AF0D020153CB800E2370E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Nikolay Dakov";
+				TargetAttributes = {
+					A28AF0D720153CB800E2370E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A28AF0EB20153CB900E2370E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A28AF0D720153CB800E2370E;
+					};
+					A28AF0F620153CB900E2370E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A28AF0D720153CB800E2370E;
+					};
+					A28AF0FF20153CB900E2370E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A28AF10E20153CB900E2370E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A28AF0D320153CB800E2370E /* Build configuration list for PBXProject "HealthTracker" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A28AF0CF20153CB800E2370E;
+			productRefGroup = A28AF0D920153CB800E2370E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A28AF0D720153CB800E2370E /* HealthTracker */,
+				A28AF0EB20153CB900E2370E /* HealthTrackerTests */,
+				A28AF0F620153CB900E2370E /* HealthTrackerUITests */,
+				A28AF0FF20153CB900E2370E /* HealthTracker WatchKit App */,
+				A28AF10E20153CB900E2370E /* HealthTracker WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A28AF0D620153CB800E2370E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A28AF0E620153CB900E2370E /* LaunchScreen.storyboard in Resources */,
+				A28AF0E320153CB800E2370E /* Assets.xcassets in Resources */,
+				A28AF0E120153CB800E2370E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28AF0EA20153CB900E2370E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28AF0F520153CB900E2370E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28AF0FE20153CB900E2370E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A28AF10920153CB900E2370E /* Assets.xcassets in Resources */,
+				A28AF10720153CB900E2370E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28AF10D20153CB900E2370E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A28AF11B20153CB900E2370E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A28AF0D420153CB800E2370E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A28AF0DE20153CB800E2370E /* ViewController.swift in Sources */,
+				A28AF0DC20153CB800E2370E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28AF0E820153CB900E2370E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A28AF0F120153CB900E2370E /* HealthTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28AF0F320153CB900E2370E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A28AF0FC20153CB900E2370E /* HealthTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28AF10B20153CB900E2370E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A28AF11920153CB900E2370E /* NotificationController.swift in Sources */,
+				A28AF11720153CB900E2370E /* ExtensionDelegate.swift in Sources */,
+				A28AF11520153CB900E2370E /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A28AF0EE20153CB900E2370E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A28AF0D720153CB800E2370E /* HealthTracker */;
+			targetProxy = A28AF0ED20153CB900E2370E /* PBXContainerItemProxy */;
+		};
+		A28AF0F920153CB900E2370E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A28AF0D720153CB800E2370E /* HealthTracker */;
+			targetProxy = A28AF0F820153CB900E2370E /* PBXContainerItemProxy */;
+		};
+		A28AF10320153CB900E2370E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A28AF0FF20153CB900E2370E /* HealthTracker WatchKit App */;
+			targetProxy = A28AF10220153CB900E2370E /* PBXContainerItemProxy */;
+		};
+		A28AF11220153CB900E2370E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A28AF10E20153CB900E2370E /* HealthTracker WatchKit Extension */;
+			targetProxy = A28AF11120153CB900E2370E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A28AF0DF20153CB800E2370E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A28AF0E020153CB800E2370E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A28AF0E420153CB900E2370E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A28AF0E520153CB900E2370E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A28AF10520153CB900E2370E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A28AF10620153CB900E2370E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A28AF11E20153CB900E2370E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A28AF11F20153CB900E2370E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A28AF12120153CB900E2370E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HealthTracker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PEACH.HealthTracker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		A28AF12220153CB900E2370E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HealthTracker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PEACH.HealthTracker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		A28AF12520153CB900E2370E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = HealthTracker_WatchKit_Extension;
+				INFOPLIST_FILE = "HealthTracker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PEACH.HealthTracker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		A28AF12620153CB900E2370E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = HealthTracker_WatchKit_Extension;
+				INFOPLIST_FILE = "HealthTracker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PEACH.HealthTracker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		A28AF12920153CB900E2370E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HealthTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PEACH.HealthTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A28AF12A20153CB900E2370E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HealthTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PEACH.HealthTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A28AF12C20153CB900E2370E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HealthTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PEACH.HealthTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthTracker.app/HealthTracker";
+			};
+			name = Debug;
+		};
+		A28AF12D20153CB900E2370E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HealthTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PEACH.HealthTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthTracker.app/HealthTracker";
+			};
+			name = Release;
+		};
+		A28AF12F20153CB900E2370E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HealthTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PEACH.HealthTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HealthTracker;
+			};
+			name = Debug;
+		};
+		A28AF13020153CB900E2370E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HealthTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PEACH.HealthTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HealthTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A28AF0D320153CB800E2370E /* Build configuration list for PBXProject "HealthTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A28AF11E20153CB900E2370E /* Debug */,
+				A28AF11F20153CB900E2370E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A28AF12020153CB900E2370E /* Build configuration list for PBXNativeTarget "HealthTracker WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A28AF12120153CB900E2370E /* Debug */,
+				A28AF12220153CB900E2370E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A28AF12420153CB900E2370E /* Build configuration list for PBXNativeTarget "HealthTracker WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A28AF12520153CB900E2370E /* Debug */,
+				A28AF12620153CB900E2370E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A28AF12820153CB900E2370E /* Build configuration list for PBXNativeTarget "HealthTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A28AF12920153CB900E2370E /* Debug */,
+				A28AF12A20153CB900E2370E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A28AF12B20153CB900E2370E /* Build configuration list for PBXNativeTarget "HealthTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A28AF12C20153CB900E2370E /* Debug */,
+				A28AF12D20153CB900E2370E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A28AF12E20153CB900E2370E /* Build configuration list for PBXNativeTarget "HealthTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A28AF12F20153CB900E2370E /* Debug */,
+				A28AF13020153CB900E2370E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A28AF0D020153CB800E2370E /* Project object */;
+}

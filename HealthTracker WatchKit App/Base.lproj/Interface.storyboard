@@ -19,7 +19,6 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HealthTracker_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="left" title="Start" id="Fzs-ej-auj"/>
                         <group width="1" alignment="left" id="6dH-Ch-hd7">
                             <items>
                                 <label alignment="center" text="---" minimumScaleFactor="0.20000000000000001" id="icQ-Sq-HG9">
@@ -27,7 +26,16 @@
                                 </label>
                             </items>
                         </group>
+                        <button width="1" alignment="left" title="Start" id="Fzs-ej-auj">
+                            <connections>
+                                <action selector="startBtnClicked" destination="AgC-eL-Hgc" id="5xY-tb-JXN"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="label" destination="icQ-Sq-HG9" id="0pB-lw-AMA"/>
+                        <outlet property="startStopButton" destination="Fzs-ej-auj" id="DDg-ri-hAs"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>

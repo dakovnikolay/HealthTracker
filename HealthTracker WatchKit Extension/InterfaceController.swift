@@ -15,8 +15,8 @@ import CoreBluetooth
 
 class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate {
     
-    @IBOutlet fileprivate weak var label: WKInterfaceLabel!
-    @IBOutlet fileprivate weak var startStopButton : WKInterfaceButton!
+    @IBOutlet var label: WKInterfaceLabel!
+    @IBOutlet var startStopButton: WKInterfaceButton!
     
     let healthStore = HKHealthStore()
     
@@ -91,7 +91,7 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate {
     }
     
     // MARK: - Actions
-    @IBAction func startBtnTapped() {
+    @IBAction func startBtnClicked() {
         if (self.workoutActive) {
             //finish the current workout
             self.workoutActive = false
@@ -104,9 +104,7 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate {
             self.workoutActive = true
             self.startStopButton.setTitle("Stop")
             startWorkout()
-        }
-        
-    }
+        }    }
     
     func startWorkout() {
         self.workoutSession = HKWorkoutSession(activityType: HKWorkoutActivityType.crossTraining, locationType: HKWorkoutSessionLocationType.indoor)

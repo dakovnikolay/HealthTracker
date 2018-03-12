@@ -7,9 +7,20 @@
 //
 
 import UIKit
+import HealthKit
 
 class ViewController: UIViewController {
 
+    let healthStore = HKHealthStore()
+    
+    // Rest of your code
+    
+    @IBAction func authoriseHealthKitAccess(_ sender: Any) {
+        self.healthStore.handleAuthorizationForExtension { success, error in
+            
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

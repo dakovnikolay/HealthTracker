@@ -299,8 +299,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A28AF12420153CB900E2370E /* Build configuration list for PBXNativeTarget "HealthTracker WatchKit App" */;
 			buildPhases = (
-				A28AF0FE20153CB900E2370E /* Resources */,
 				A28AF12320153CB900E2370E /* Embed App Extensions */,
+				A28AF0FE20153CB900E2370E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -366,6 +366,9 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
 							com.apple.HealthKit.watchos = {
 								enabled = 1;
 							};
